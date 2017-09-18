@@ -1,3 +1,5 @@
+# import app as app
+# from kivy.uix.popup import Popup
 <MainScreen>:
 
     BoxLayout:
@@ -103,7 +105,8 @@
 
             Button:
                 text: 'Login'
-
+                on_press:
+                    root.manager.current = 'login'
             Button:
                 text: 'Register For New Account'
 
@@ -111,3 +114,45 @@
             orientation: 'horizontal'
 
 
+
+#######################################
+#           LoginScreen               #
+#######################################
+
+<LoginScreen>:
+
+    BoxLayout:
+        orientation: 'vertical'
+        canvas:
+            Color:
+                rgba: 1, 1, 1, 1
+
+        Label:
+            text: 'Welcome to User Name'
+
+        Label:
+            text: 'Application Name:'
+
+        Label:
+            text: ''
+
+        Label:
+            text: ''
+
+        Label:
+            text: ''
+
+        BoxLayout:
+            orientation: 'horizontal'
+
+            Label:
+                text: ''
+
+            Button:
+                text: 'Next Button'
+                on_press: root.manager.current = 'next'
+            Label:
+                text: ''
+
+        Label:
+            text: ''

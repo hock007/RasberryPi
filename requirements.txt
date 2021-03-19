@@ -15,7 +15,7 @@ Flask-PyMongo==0.5.1
 Flask-SQLAlchemy==2.2
 idna==2.5
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 Kivy==1.10.0
 Kivy-Garden==0.1.4
 MarkupSafe==0.23
